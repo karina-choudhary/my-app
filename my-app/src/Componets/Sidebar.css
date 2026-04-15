@@ -1,0 +1,115 @@
+
+/* ===== Custom Navbar ===== */
+.custom-navbar {
+  background-color: #1a1a1a;
+  padding: 0.8rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.menu-btn {
+  background: transparent;
+  border: 1px solid #fff;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  padding: 4px 10px;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: white;
+  color: #1a1a1a;
+}
+
+/* Navbar buttons (Login / Register) */
+.login-btn {
+  background: transparent;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  padding: 4px 14px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #f1f1f1;
+  color: #1a1a1a;
+}
+
+.register-btn {
+  background: #f1c40f;
+  color: #1a1a1a;
+  border-radius: 8px;
+  padding: 4px 14px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #d4ac0d;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  padding: 1.2rem;
+  transition: all 0.35s ease;
+  z-index: 1050;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.5);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+}
+
+.sidebar ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  color: #f1c40f;
+}
+
+/* Overlay */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1040;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .collapse.navbar-collapse {
+    display: none !important;
+  }
+}

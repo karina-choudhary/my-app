@@ -1,0 +1,12 @@
+.login-page {
+  background: transparent; /* or a soft background color */
+  padding: 20px;
+}
+
+.login-form input.form-control {
+  border-radius: 8px;
+}
+
+.card {
+  border-radius: 12px;
+}

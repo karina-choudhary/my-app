@@ -1,0 +1,52 @@
+/* CabBookingForm.css */
+.body{
+  margin: 0;
+  padding:0 ;
+  color: red;
+  background-color: #007bff;
+}
+.cab-booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .cab-booking-form h2 {
+    text-align: center;
+  }
+  
+  .cab-booking-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cab-booking-form label {
+    margin-bottom: 8px;
+  }
+  
+  .cab-booking-form input[type="text"],
+  .cab-booking-form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .cab-booking-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cab-booking-form button:hover {
+    background-color: #0056b3;
+  }
+  
