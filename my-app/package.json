@@ -52,6 +52,10 @@
       "react-dom": "$react-dom"
     },
     "ajv": "8.12.0"
+  },
+  "engines": {
+    "node": "20.x"
   }
+
 }
 
